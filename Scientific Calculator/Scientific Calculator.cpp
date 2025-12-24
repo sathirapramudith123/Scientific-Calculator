@@ -19,7 +19,14 @@ int main() {
 		cout << "11. Exit\n";
 		cout << "Enter your choice=";
 		cin >> choice;
-
+		switch (choice) {
+		case 1:
+			cout << "Enter two numbers=";
+			cin >> num1 >> num2;
+			result = num1 + num2;
+			cout << "Result=" << result << endl;
+			break;
+		}
 
 	}
 }
