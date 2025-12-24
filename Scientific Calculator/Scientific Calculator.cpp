@@ -26,6 +26,58 @@ int main() {
 			result = num1 + num2;
 			cout << "Result=" << result << endl;
 			break;
+		case 2:
+			cout << "Enter two numbers=";
+			cin >> num1 >> num2;
+			result = num1 - num2;
+			cout << "Result=" << result << endl;
+			break;
+		case 3:
+			cout << "Enter two numbers=";
+			cin >> num1 >> num2;
+			result = num1 * num2;
+			cout << "Result=" << result << endl;
+			break;
+		case 4:
+			cout << "Enter two numbers=";
+			cin >> num1 >> num2;
+			result = num1 / num2;
+			cout << "Result=" << result << endl;
+			break;
+		case 5:
+			cout << "Enter base and exponent=";
+			cin >> num1 >> num2;
+			result = pow(num1,num2);
+			cout << "Result=" << result << endl;
+			break;
+		case 6:
+			cout << "Enter two numbers=";
+			cin >> num1;
+			if (num1 >= 0) {
+				result = sqrt(num1);
+				cout << "Result=" << result << endl;
+			}
+			else {
+				cout << "Error: Negative number! \n";
+			}
+			break;
+		case 7:
+			cout << "enter angle in degrees=";
+			cin >> num1;
+			result = sin(num1 * M_PI / 180.0);
+			cout << "Result:" << result << endl;
+			break;
+		case 8:
+			cout << "enter angle in degrees=";
+			cin >> num1;
+			result = cos(num1 * M_PI / 180.0);
+			cout << "Result:" << result << endl;
+			break;
+		case 9:
+			cout << "enter angle in degrees=";
+			cin >> num1;
+			result = tan(num1 * M_PI / 180.0);
+			cout << "Result:" << result << endl;
 		}
 
 	}
