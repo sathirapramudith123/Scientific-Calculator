@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#define PI 3.14159265358979323846
 using namespace std;
 int main() {
 	int choice;
@@ -47,7 +48,7 @@ int main() {
 		case 5:
 			cout << "Enter base and exponent=";
 			cin >> num1 >> num2;
-			result = pow(num1,num2);
+			result = pow(num1, num2);
 			cout << "Result=" << result << endl;
 			break;
 		case 6:
@@ -64,21 +65,36 @@ int main() {
 		case 7:
 			cout << "enter angle in degrees=";
 			cin >> num1;
-			result = sin(num1 * M_PI / 180.0);
+			result = sin(num1 * PI / 180.0);
 			cout << "Result:" << result << endl;
 			break;
 		case 8:
 			cout << "enter angle in degrees=";
 			cin >> num1;
-			result = cos(num1 * M_PI / 180.0);
+			result = cos(num1 * PI / 180.0);
 			cout << "Result:" << result << endl;
 			break;
 		case 9:
 			cout << "enter angle in degrees=";
 			cin >> num1;
-			result = tan(num1 * M_PI / 180.0);
+			result = tan(num1 * PI / 180.0);
 			cout << "Result:" << result << endl;
+		case 10:
+			cout << "Enter a number=";
+			cin >> num1;
+			if (num1 > 0) {
+				result = log(num1);
+				cout << "Result:" << result << endl;
+			}
+			else {
+				cout << "Error: number is +ve!\n";
+			}break;
+		case 11:
+			cout << "Exiting ...\n";
+			break;
+		default:
+			cout << "Invaild Choice!\n";
 		}
-
-	}
+	} while (choice != 11);
+	return 0;
 }
